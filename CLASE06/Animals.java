@@ -1,12 +1,15 @@
 package CLASE06;
 
 abstract class Animals {
+
+    private String raza;
+
     //metodo obstracto
     abstract void hacerSonido();
 
     //metodo concreto
     void dormir(){
-        System.out.println("Roncanco.....ZzzzzZ");
+        System.out.println("Roncanco.....ZzzzzZ" + raza);
     }
 
 
