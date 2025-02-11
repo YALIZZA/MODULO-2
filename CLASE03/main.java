@@ -17,9 +17,13 @@ public class main {//ususario
              Vehiculo.moverse();
         }
         
+        nadador.patear();
+        
         Pato pato = new Pato();
         pato.volar();
         pato.nadar();
+        pato.clavado();
+        
 
 
     }

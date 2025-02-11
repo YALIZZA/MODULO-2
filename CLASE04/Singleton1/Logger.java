@@ -1,4 +1,4 @@
-package CLASE04.Singleton;
+package Singleton1;
 
 public class Logger {
     

@@ -1,4 +1,4 @@
-package CLASE04;
+import CLASE04.Singleton;
 
 public class main {
     public static void main(String[] args) {
@@ -18,9 +18,9 @@ public class main {
         //Factory
         Forma forma1 = FormaFactory.getForma(tipoForma.CIRCULO);
         forma1.dibujar();
-        Forma forma1 = FormaFactory.getForma(tipoForma.RECTANGULO);
+        Forma forma2 = FormaFactory.getForma(tipoForma.RECTANGULO);
         forma2.dibujar();
-        Forma forma1 = FormaFactory.getForma(tipoForma.TRIANGULO);
+        Forma forma3 = FormaFactory.getForma(tipoForma.TRIANGULO);
         forma3.dibujar();
 
         System.out.println(forma1 == forma2);
