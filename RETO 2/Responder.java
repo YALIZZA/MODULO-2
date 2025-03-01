@@ -1,6 +1,6 @@
 public interface Responder {
 
 int AtenderEmergencia();
-int EveluarEstado();
+int EvaluarEstado();
 
 }

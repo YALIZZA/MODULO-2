@@ -17,10 +17,10 @@ public class Emergencia{
  
 
 
-private final int tipoEmergencia;
-private final String ubicacion;
-private final int nivelGravedad;
-private final int tiempoRespuesta;
+private  int tipoEmergencia;
+private String ubicacion;
+private int nivelGravedad;
+private int tiempoRespuesta;
 private boolean Atendido;
 
 public Emergencia(String ubicacion, int nivelGravedad, int tiempoRespuesta, int tipoEmergencia) {
@@ -32,21 +32,33 @@ public Emergencia(String ubicacion, int nivelGravedad, int tiempoRespuesta, int 
 
 public static void main (String[] args) throws Exception {
     System.out.println("¡Estas en la aplicacion de Emergencias!");
+// Emergencia emergencia= new Emergencia(tipoEmergencia());
+    System.out.println("Ingrese la ubicacion de la Emergencia");
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("la emergencia es " + gettipoEmergencia() + " ubicada en " + entrada.next());
+        System.out.println("");
+        System.out.println("la emergencia fue registrada con exito.");
+        System.out.println("Por favor siga las indicaciones dadas por las autoridades competentes.");
     
-    //Emergencia Emergencia = new Emergencia();
-    //System.out.println("la emergencia es " + Emergencia.gettipoEmergencia);
-    System.out.println("");
-    System.out.println("la emergencia fue registrada con exito.");
-    System.out.println("Por favor siga las indicaciones dadas por las autoridades competentes.");
-
+    }
+    public void setEntrada(Scanner entrada) {
+        this.entrada = entrada;
+    }
+    
+    public int gettipoEmergencia() {
+        return tipoEmergencia;
 }
-public int gettipoEmergencia() {
+
+public Emergencia(int tipoEmergencia) {
+        this.tipoEmergencia = tipoEmergencia;
+    }
+
+public void settipoEmergencia(int tipoEmergencia) {
     System.out.println("Ingrese el tipo de Emergencia");
     System.out.println("1. Incendio");
     System.out.println("2. Robo");
     System.out.println("3. Accidente");
-    //String tipoEmergencia = entrada.nextLine();
-    return tipoEmergencia;
+    this.tipoEmergencia = entrada.nextInt();
 }
 
 public String getUbicacion() {

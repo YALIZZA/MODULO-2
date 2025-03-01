@@ -1,4 +1,6 @@
-public class Main extends Emergencia{
+package RETO02;
+
+public class void Main extends Emergencia{
 
 
     
