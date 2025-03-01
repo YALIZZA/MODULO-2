@@ -6,7 +6,7 @@ public class Incendio extends Emergencia implements Responder{
         super(tipo, ubicacion, nivelGravedad, tiempoRespuesta);
         
     }
-
+    
     @Override
     public void atenderEmergencia() {
        System.out.println("Bomberos en camino");

@@ -1,7 +1,5 @@
-package PROYECTO2;
+import javax.sound.sampled.SourceDataLine;
 
 public class main {
-
-    //tipo de emergencias
-
-}  
+ 
+}

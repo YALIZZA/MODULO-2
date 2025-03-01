@@ -9,7 +9,7 @@ public class Accidente extends Emergencia implements Responder{
 
     @Override
     public void atenderEmergencia() {
-        System.out.println("Paramedicos en camino");
+             System.out.println("Paramedicos en camino");
     }
 
     @Override
