@@ -4,9 +4,6 @@ package Reto02;
 
 public interface Responder {
 
-    int atenderEmergencia();
-
-    int evaluarEstado();
 int AtenderEmergencia();
 int EvaluarEstado();
 

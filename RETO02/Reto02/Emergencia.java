@@ -29,9 +29,8 @@ public Emergencia(int tipoEmergencia, String ubicacion, int nivelGravedad, int t
 }
 
 public int getTipoEmergencia() {
-    witch(tipoEmergencia){
-        
-    }
+   // witch(tipoEmergencia){
+  //
     return tipoEmergencia;
 }
 

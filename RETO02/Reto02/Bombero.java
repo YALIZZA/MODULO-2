@@ -14,7 +14,7 @@ public class Bombero extends Emergencia {
 
     public int getCantidadVehiculos() {
         cantidadVehiculos = 10;
-        if()
+        //if()
         return cantidadVehiculos;
     }
 
