@@ -6,7 +6,7 @@ public class Emergencia{
 
 //gestion de emergencias urbanas    
 //1. bomberos, ambulancias y policia
-//2. asignar recursis seegun prioridad.
+//2. asignar recursos segun la prioridad.
 //3. evaluar rendimiento del sistema 
 
 //4. crear clases de emergencias con atributos y metodos
@@ -90,5 +90,38 @@ public void setAtendido(boolean atendido) {
         System.out.println("Ingrese una opcion: ");
         return entrada.nextInt();
 }
+
+private void asignarRecursos() {
+    final int VehiculosAmbulancia;
+    private int VehiculosPolicia;
+    protected int VehiculosBombero;
+    protected int RecursosPolicia;
+    protected int RecursosAmbulancia;
+    protected int RecursosBombero;
+
+    if (tipoEmergencia == 1) {
+        VehiculosAmbulancia = 2;
+        VehiculosPolicia = 2;
+        VehiculosBombero = 3;
+        RecursosPolicia = 100;
+        RecursosAmbulancia = 100;
+        RecursosBombero = 100;
+    } else if (tipoEmergencia == 2) {
+        VehiculosAmbulancia = 1;
+        VehiculosPolicia = 3;
+        VehiculosBombero = 0;
+        RecursosPolicia = 100;
+        RecursosAmbulancia = 100;
+        RecursosBombero = 100;
+    } else if (tipoEmergencia == 3) {
+        VehiculosAmbulancia = 2;
+        VehiculosPolicia = 2;
+        VehiculosBombero = 3;
+        RecursosPolicia = 100;
+        RecursosAmbulancia = 100;
+        RecursosBombero = 100;
+    }
+}
+
 
 }
