@@ -2,8 +2,6 @@
 
 public class Emergencia {
 
-    static Scanner Entrada = new Scanner(System.in);
-
 
     private final String tipo;
     private final String ubicacion;
