@@ -1,5 +1,6 @@
 package Reto02;
 
+import java.util.Scanner;
 
 public class Emergencia{
 
@@ -14,6 +15,8 @@ public class Emergencia{
 //6. disenar gerarquia y herencia
 //    Incendio, accidente vehicular, robo.
  
+Scanner entrada = new Scanner(System.in);
+
  private int tipoEmergencia;
  private String ubicacion;
  private int nivelGravedad;
@@ -76,4 +79,16 @@ public void setAtendido(boolean atendido) {
         System.out.println("Nivel de Gravedad: " + nivelGravedad);
         System.out.println("Tiempo de Respuesta: " + tiempoRespuesta);
     }
+
+    private int menuEmergencia () {
+        System.out.println("¡Estas en la aplicacion de Emergencias!");
+        System.out.println("Ingrese el tipo de Emergencia");
+        System.out.println("1. Incendio");
+        System.out.println("2. Robo");
+        System.out.println("3. Accidente");
+        System.out.println("4. Salir");
+        System.out.println("Ingrese una opcion: ");
+        return entrada.nextInt();
+}
+
 }

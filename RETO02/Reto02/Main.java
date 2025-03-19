@@ -6,12 +6,8 @@ public class Main{
     
    public static void main(String[] args) {
        
-
-       System.out.println("¡Estas en la aplicacion de Emergencias!");
-       System.out.println("Ingrese el tipo de Emergencia");
-       System.out.println("1. Incendio");
-       System.out.println("2. Robo");
-       System.out.println("3. Accidente");
+      // public int menuEmergencia();
+      
        //Emergencia emergencia = new Emergencia("cra 5 10 12", 3, 15, 1);
        //emergencia.settipoEmergencia(entrada.nextInt());
        System.out.println("Ingrese la ubicacion de la Emergencia");
@@ -24,5 +20,5 @@ public class Main{
     
    }
 
-  // void menuEmergencia();
+  
 }
